@@ -1,4 +1,5 @@
 package no.hvl.dat100.tabeller;
+
 public class Tabeller {
 	// a)
 	public static void skrivUt(int[] tabell) {
@@ -96,11 +97,11 @@ public class Tabeller {
 	    return nyTabell;
 		
 	}
-public static void main(String[] args) {
-   // Example values for the arrays
+	public static void main(String[] args) {
+   
    int[] tabell1 = {42,67,89};
    int[] tabell2 = {5, 15, 25, 35, 45};
-   // Eks eks::
+  
    skrivUt(tabell1);
    System.out.println("\n" + tilStreng(tabell1));
    System.out.println(summer(tabell1));

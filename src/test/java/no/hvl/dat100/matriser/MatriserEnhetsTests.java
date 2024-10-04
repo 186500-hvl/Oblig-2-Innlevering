@@ -81,6 +81,10 @@ class MatriserEnhetsTests {
 	
 	
 	
+	
+		
+	
+	
 	@Test
 	void testerLik() {
 		
@@ -91,4 +95,3 @@ class MatriserEnhetsTests {
 		assertFalse(Matriser.erLik(c, a));
 	}
 }
-
