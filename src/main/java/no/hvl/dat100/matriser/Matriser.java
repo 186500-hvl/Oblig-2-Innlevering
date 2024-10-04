@@ -14,23 +14,21 @@ public class Matriser {
 
     // b)
     public static String tilStreng(int[][] matrise) {
-    	
-    	    StringBuilder sb = new StringBuilder();
-    	    for (int i = 0; i < matrise.length; i++) {
-    	        for (int j = 0; j < matrise[i].length; j++) {
-    	            sb.append(matrise[i][j]);
-    	            if (j < matrise[i].length - 1) { 
-    	                sb.append(" "); 
-    	            }
-    	        }
-    	        if (i < matrise.length - 1) { 
-    	            sb.append("\n"); 
-    	        }
-    	    }
-    	    return sb.toString();
-    	}
-       public static void main(String[] args) {
-        int[][] matrise = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < matrise.length; i++) {
+            for (int j = 0; j < matrise[i].length; j++) {
+                sb.append(matrise[i][j]);
+                if (j < matrise[i].length - 1) {
+                    sb.append(" ");
+                }
+            }
+            sb.append("\n");
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        int[][] matrise = { {1, 2, 3}, {4, 5, 6}, {7, 8, 9} };
         String streng = tilStreng(matrise);
         System.out.println(streng);
     }
